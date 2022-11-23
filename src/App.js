@@ -6,7 +6,7 @@ function App() {
   const [listOfPosts, setListOfPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("https://splendid-meringue-acf501.netlify.app/posts").then((response) => {
+    axios.get("https://full-stack-api-jt.herokuapp.com/posts").then((response) => {
 // This line was just used for testing      console.log(response.data);
       setListOfPosts(response.data);
     });
