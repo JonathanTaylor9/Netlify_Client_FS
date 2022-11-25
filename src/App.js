@@ -6,7 +6,7 @@ function App() {
   const [listOfPosts, setListOfPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("https://adcadb1.azurewebsites.net//posts").then((response) => {
+    axios.get("https://adcadb1.azurewebsites.net/posts").then((response) => {
 // Below config is for Heroku
 //    axios.get("https://full-stack-api-jt.herokuapp.com/posts").then((response) => {
 // This line was just used for testing      console.log(response.data);
